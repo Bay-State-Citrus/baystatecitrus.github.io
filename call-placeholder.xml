@@ -1,5 +1,0 @@
-<Response>
-<Say voice="Polly.Joanna-Generative">Thank you for calling Bay State Citrus.</Say>
-<Pause length="0.3"/>
-<Say voice="Polly.Joanna-Generative">Please visit our website, b a y s t a t e c i t r u s dot com</Say>
-</Response>
