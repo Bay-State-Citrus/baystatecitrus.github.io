@@ -11,9 +11,23 @@
             box-sizing: border-box;
         }
 
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
         body {
             font-family: Georgia, 'Times New Roman', serif;
-            background: linear-gradient(135deg, #ff9500 0%, #ff6b00 50%, #e65c00 100%);
+            background: linear-gradient(135deg, #ff9500, #ff6b00, #e65c00, #ff9500);
+            background-size: 300% 300%;
+            animation: gradientShift 30s ease infinite;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
