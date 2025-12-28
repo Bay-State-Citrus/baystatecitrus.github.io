@@ -64,8 +64,32 @@
             max-width: 300px;
             width: 100%;
             height: auto;
-            margin-bottom: 2rem;
+            margin-bottom: 0;
             filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
+        }
+
+        .contact-item {
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .logo {
+                max-width: 200px;
+            }
+
+            .contact-item {
+                display: block;
+                margin: 0.1rem 0;
+            }
+
+            .separator {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -76,7 +100,11 @@
         <p>Coming Soon</p>
     </div>
     <footer>
-        <a href="mailto:contact@baystatecitrus.com">contact@baystatecitrus.com</a> | Phone: <a href="tel:+19783446823">(978) 344-6823</a> | Fax: (978) 723-0305
+        <span class="contact-item"><a href="mailto:contact@baystatecitrus.com">contact@baystatecitrus.com</a></span>
+        <span class="separator">|</span>
+        <span class="contact-item">Phone: <a href="tel:+19783446823">(978) 344-6823</a></span>
+        <span class="separator">|</span>
+        <span class="contact-item">Fax: (978) 723-0305</span>
     </footer>
 </body>
 </html>
