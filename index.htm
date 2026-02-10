@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bay State Citrus - Coming Soon</title>
+    <title>Bay State Citrus - Citrus Rootstock Seeds</title>
     <style>
         * {
             margin: 0;
@@ -45,23 +45,53 @@
             padding: 2rem;
         }
 
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            color: #f5c63c;
-            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+        .logo {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
         }
 
-        p {
-            font-size: 4rem;
+        .tagline {
+            font-size: 1.6rem;
             color: #f5c63c;
             text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+            margin-bottom: 1.2rem;
+            max-width: 600px;
+            line-height: 1.4;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 560px;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .shop-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.7rem 2rem;
+            background: #f5c63c;
+            color: #1a5f2a;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .shop-link:hover {
+            background: #ffd95c;
         }
 
         footer {
             text-align: center;
             padding: 2rem;
             font-size: 1rem;
+            line-height: 1.8;
         }
 
         footer a {
@@ -75,17 +105,25 @@
             border-bottom-color: #f5c63c;
         }
 
-        .logo {
-            max-width: 400px;
-            width: 100%;
-            height: auto;
-            margin-bottom: 0;
-            filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
-        }
-
         .contact-item {
             display: inline-block;
             margin: 0 0.5rem;
+        }
+
+        .policy-links {
+            margin-top: 0.3rem;
+        }
+
+        .policy-links a {
+            margin: 0 0.4rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            border-bottom-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .policy-links a:hover {
+            color: #f5c63c;
+            border-bottom-color: #f5c63c;
         }
 
         @media (max-width: 768px) {
@@ -93,13 +131,12 @@
                 padding: 1rem;
             }
 
-            h1 {
-                font-size: 2rem;
-                margin-bottom: 0.5rem;
+            .tagline {
+                font-size: 1.2rem;
             }
 
-            p {
-                font-size: 2rem;
+            .description {
+                font-size: 1rem;
             }
 
             .logo {
@@ -125,15 +162,21 @@
 <body>
     <div class="container">
         <img src="logo-color.png" alt="Bay State Citrus" class="logo">
+        <p class="tagline">Citrus rootstock seeds for the home grower</p>
+        <p class="description">
+            We supply clean, tested citrus rootstock seeds in small quantities that make sense for backyard growers and hobbyist grafters. Most suppliers sell by the quart — we sell by the seed, so you can grow exactly what you need.
+        </p>
+        <span class="shop-link" style="opacity: 0.7; cursor: default;">Shop Coming Soon</span>
     </div>
     <footer>
         <span class="contact-item"><a href="mailto:contact@baystatecitrus.com">contact@baystatecitrus.com</a></span>
         <span class="separator">|</span>
         <span class="contact-item">Phone: <a href="tel:+19783446823">(978) 344-6823</a></span>
-        <span class="separator">|</span>
-        <span class="contact-item">Fax: (978) 723-0305</span>
-        <br />
-        <span class="contact-item">© 2026 Bay State Citrus LLC. All rights reserved</span>
+        <br>
+        <div class="policy-links">
+            <a href="policies.htm">Return, Refund &amp; Dispute Policy</a>
+        </div>
+        <span class="contact-item">&copy; 2026 Bay State Citrus LLC. All rights reserved.</span>
     </footer>
 </body>
 </html>
